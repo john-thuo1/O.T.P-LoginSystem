@@ -3,3 +3,6 @@ The repository contains an implementation of a One Time Password Login system de
 
 
 ![OTPSteps](otploginsteps.png)
+![OTPSteps](otploginsteps2.png)
+
+
