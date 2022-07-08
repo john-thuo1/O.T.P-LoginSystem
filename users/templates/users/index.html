@@ -1,0 +1,82 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+
+<main class="container">
+  <div class="p-1 p-md-5 mb-2 text-white rounded bg-steel">
+    <div class="col-md-12 px-0">
+      <h1 class="display-4 fst-normal">One Time Password (O.T.P) login system that uses Africa's Talking API</h1>
+    </div>
+  </div>
+    <h3 class="pb-4 mb-4 fst-normal border-bottom text-center text-primary">
+        Steps to take
+      </h3>
+      
+ <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+     
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Step 1 : Sign Up</strong>
+              <h3 class="mb-1"></h3>
+              <ul>
+              <li>Click on Sign up to create account</li>
+              <li>Enter your First Name</li>
+              <li>Enter your Last Name</li>          
+              <li>Enter your Username</li>        
+              <li>Enter your Phone Number i.e Start with your country code e.g. +254743106974</li>
+              <li>Click on "Submit" button to sign up</li>
+              <li>Your default password is 123456</li>
+            </ul>
+            </div>
+   
+          </div>
+        </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Step 2 : Test OTP login</strong>
+              <ul>
+                <li>Click on the "Log In" menu</li>         
+                <li>Enter your Username</li>          
+                <li>Enter your default Password</li> 
+                <li>An SMS message with a unique code will be sent to the simulator</li>
+                <li>Open the message in the simulator and copy the code</li>
+                <li>Enter the code in the O.T.P. page and submit</li>
+                <li>If th code is correct you will be logged in</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="row">
+    <div class="col-md-12">
+      <article class="blog-post">
+        <h3 class="pb-4 pt-4 mb-4 mt-4 fst-italic border-bottom border-top text-center">Africa's Talking Simulator</h3>
+        <br>
+        <p>Initialise Simulator:</p>
+        <ul>
+          <li><a target="_blank" href="https://developers.africastalking.com/simulator">Click here</a> to open Africa's Talking simulator</li>
+          <li>Enter the mobile number you used to sign up in the simulator</li>
+          <li>Open "Messages" App on the simulator to view incoming messages</li>
+        </ul>
+      </br>
+      </article>
+
+    </div> 
+
+  </div>
+
+</main>
+
+
+{% endblock content%}

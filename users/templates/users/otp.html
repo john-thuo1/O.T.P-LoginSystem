@@ -1,0 +1,20 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section">
+        <form method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Enter One Time Password</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group mt-2">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+
+            <input type="hidden" id="user_id" name="user_id" value="{{user_id}}">
+
+        </form>
+    </div>
+{% endblock content%}
